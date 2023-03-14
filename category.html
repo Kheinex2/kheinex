@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="category.css">
+  <link rel="stylesheet" href="exercise.css">
+  <link rel="stylesheet" href="exercise2.css">
+  <link rel="stylesheet" href="exercise3.css">
+  <link rel="stylesheet" href="difficulty-style.css">
+  <title>Category Section</title>
+</head>
+<body style="font-family: Poppins;">
+  <!-- TITLE SECTION -->
+  <div class="h1-title-container">
+    <div class="h1-container">
+      <p class="category-caption">Choose any Exercises to Begin</p>
+    </div>
+  </div>
+  <!-- TITLE SECTION -->
+
+
+  <!-- SEARCH SECTION -->
+  <div class="search-container">
+    <input class="search-input" type="text" id="myInput" onkeyup='tableSearch()' placeholder="Search any Title">
+    <input class="search-input" type="text" id="myInput1" onkeyup='tableSearch1()' placeholder="Search any Difficulty">
+  </div>
+  <!-- SEARCH SECTION -->
+  
+
+  <!-- TABLE SECTION -->
+  <div class="main-container">
+  <div class="container">
+
+    <table class="table" id="myTable" data-filter-control="true" data-show-search-clear-button="true">
+      <tr>
+        <th>Title</th>
+        <th>Difficulty</th>
+        <th></th>
+      </tr>
+      <!-- TUTORIAL SECTION -->
+      <tr>
+        <td><span class="bold-text">Get Started with CodeBit+ [Recommended]</span></td>
+        <td><span class="bold-text">Tutorial</span></td>
+        <td><input type="button" id="start-btn1" value="W.I.P" class="startbtn"></td>
+        <td><input type="button" id="start-btn1" value="Mark as Done" class="startbtn"></td>
+      </tr>
+      <!-- TUTORIAL SECTION -->
+
+      <!-- EXERCISE 1 -->
+      <tr>
+        <td>CSS Flexbox Center</td>
+        <td class="medium-dif">Medium</td>
+        <td><a href="#popup-ex1"><input type="button" id="start-btn1" value="Start" class="startbtn"></a></td>
+        <td><input type="button" id="start-btn1" value="Mark as Done" class="startbtn"></td>
+      </tr>
+
+      <div id="popup-ex1">
+        <div class="popup-content1">
+          <h1 class="exercise1-title">CSS Flexbox Center</h1>
+          <p class="exercise1-caption">Write a flexbox property that will center
+            <br>
+            a div using the class <span class="bold">container</span>
+          </p>
+            <a href="#" class="close-content1-popup">&times;</a>
+
+            <div class="main-input-container">
+              <div class="input-container">
+                <textarea class="textarea1"id="ans1" placeholder="<Type some code here...>"></textarea>
+
+                <div class="btn-containers">
+                  <button class="submit-answer-btn" onclick="submit_ans1();">Submit Answer</button>
+                  <button class="show-hint-btn">Show Hint</button>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- EXERCISE 1 -->
+
+      <!-- EXERCISE 2 -->
+      <tr>
+        <td>Paragraph in HTML</td>
+        <td class="easy-dif">Easy</td>
+        <td><a href="#popup-ex2"><input type="button" id="start-btn1" value="Start" class="startbtn"></a></td>
+        <td><input type="button" id="start-btn1" value="Mark as Done" class="startbtn"></td>
+      </tr>
+      <tr>
+
+      <div id="popup-ex2">
+        <div class="popup-content2">
+          <h1 class="exercise2-title">Paragraph in HTML</h1>
+          <p class="exercise2-caption">Write the proper usage of paragraph using HTML.
+            <br>
+            Turn the following text into a paragraph.
+            <br>
+            <br>
+            <span class="bold">Smartphone</span>
+          </p>
+            <a href="#" class="close-content2-popup">&times;</a>
+
+            <div class="main-input-container2">
+              <div class="input-container2">
+                <textarea class="textarea2"id="ans2" placeholder="<Type some code here...>"></textarea>
+
+                <div class="btn-containers">
+                  <button class="submit-answer-btn" onclick="submit_ans2();">Submit Answer</button>
+                  <button class="show-hint-btn">Show Hint</button>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- EXERCISE 2 -->
+
+      <!-- EXERCISE 3 -->
+      <tr>
+        <td>Python Reverse List</td>
+        <td class="medium-dif">Medium</td>
+        <td><a href="#popup-ex3"><input type="button" id="start-btn1" value="Start" class="startbtn"></a></td>
+        <td><input type="button" id="start-btn3" value="Mark as Done" class="startbtn"></td>
+      </tr>
+      <tr>
+
+        <div id="popup-ex3">
+          <div class="popup-content3">
+            <h1 class="exercise3-title">Python Reverse List</h1>
+            <p class="exercise3-caption">Reverse the following below:
+              <br>
+              <span class="bold">list</span> = [10, 200, 400, 900].
+            </p>
+              <a href="#" class="close-content3-popup">&times;</a>
+  
+              <div class="main-input-container3">
+                <div class="input-container3">
+                  <textarea class="textarea3"id="ans3" placeholder="<Type some code here...>"></textarea>
+  
+                  <div class="btn-containers">
+                    <button class="submit-answer-btn" onclick="submit_ans3();">Submit Answer</button>
+                    <button class="show-hint-btn">Show Hint</button>
+                  </div>
+  
+                </div>
+              </div>
+          </div>
+        </div>
+      <!-- EXERCISE 3 -->
+
+    </table>
+  </div>
+</div>
+<!-- TABLE SECTION -->
+
+  <script src="search-function.js"></script>
+  <script src="search-function2.js"></script>
+  <script src="exercise.js"></script>
+  <script src="exercise2.js"></script>
+  <script src="exercise3.js"></script>
+</body>
+</html>

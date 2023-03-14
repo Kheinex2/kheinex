@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+#popup-ex2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+#popup-ex2 .popup-content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 50%;
+  padding: 10px 20px;
+  background-color: #eee;
+}
+
+.popup-content2 {
+  border-radius: 16px;
+}
+
+#popup-ex2 a.close-content2-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#popup-ex2:target {
+  display: block;
+}
+
+
+.main-input-container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container2 {
+  width: 30%;
+  margin-top: 25px;
+}
+
+.textarea2 {
+  background-color: white;
+  outline-style: none;
+  color: black;
+  font-size: 15px;
+  border-style: none;
+  padding-left: 5px;
+  font-family: Poppins;
+  width: 110%;
+  height: 150px;
+  resize: none;
+  border-radius: 4px;
+}
+
+.textarea2::-webkit-scrollbar {
+  width: 0px;
+}
+
+.exercise2-caption {
+  font-family: Poppins;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.exercise2-title {
+  font-family: Poppins;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn-containers {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-answer-btn {
+  font-family: Poppins;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(0, 174, 255);
+  background-color: white;
+  color: rgb(0, 174, 255);
+  cursor: pointer;
+}
+
+.submit-answer-btn:hover {
+  background-color: rgb(0, 174, 255);
+  color: white;
+  transition: 0.15s;
+}
+
+.show-hint-btn {
+  font-family: Poppins;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: -20px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(0, 174, 255);
+  background-color: rgb(0, 174, 255);
+  color: white;
+  cursor: pointer;
+}
+
+.show-hint-btn:hover {
+  background-color: rgb(66, 195, 255);
+  border-color: rgb(66, 195, 255);
+  transition: 0.15s;
+}
